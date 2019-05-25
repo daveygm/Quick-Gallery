@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1">
+	
+	<title>Quick Gallery</title>
+
+	<link rel="stylesheet" type="text/css" href="css/quick-gallery.css">
+</head>
+<body>
+
+
+<h1>Quick Gallery</h1>
+<hr>
+
+
+
+
+<!-- Quick Gallery Overlay -->
+<div id="quickGalleryPopup" style="display: none;">
+	<div id="quickGalleryLeftButton" class="quickGalleryNav">&#x276E;</div>
+	<div id="quickGalleryRightButton" class="quickGalleryNav">&#x276F;</div>
+	<img id="quickGalleryMainImage" src="">
+	<div id="quickGalleryCloseButton">&times;</div>
+</div>
+<!-- Quick Gallery Thumbnails -->
+<div id="quickGalleryThumbs" class="quickGalleryThumbs clearfix">
+	<img src="qg-img/image1-thumb.jpg">
+	<img src="qg-img/image2-thumb.jpg">
+	<img src="qg-img/image3-thumb.jpg">
+	<img src="qg-img/image4-thumb.jpg">
+</div>
+
+<hr>
+
+
+<h3>Usage</h3>
+
+<ul>
+	<li>Quick Gallery automatically looks for higher resolution images for all the thumbnails listed in the DIV element with ID of quickGalleryThumbs. To add more iamges to the gallery just insert more thumbnails in the list.</li>
+	<li>Thumbnails should be named the same as their high-resolution counterparts, except they should have  "-thumb" appended to the filename.</li>
+	<li>Arrow keys can also be used to navigate between the photos while the modal is popped up.</li>
+</ul>
+
+
+
+<script type="text/javascript" src="js/quick-gallery.js"></script>
+
+
+</body>
+</html>
